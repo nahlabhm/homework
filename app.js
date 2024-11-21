@@ -12,7 +12,9 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
     res.send('Page à propos');
   });
-  
+  app.get('/contact', (req, res) => {
+    res.send('Page de contact');
+  });
 // Démarrer le serveur
 app.listen(port, () => {
   console.log(`Serveur en écoute sur http://localhost:${port}`);
